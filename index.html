@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.svg" alt="logo-img">
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="top-section">
+
+        <div class="label">
+          <label for="input">Bill</label>
+        </div>
+
+        <div class="input_wrapper">
+          <input type="number" placeholder="0.0" id="input">
+          <img src="images/icon-dollar.svg" alt="dollar-img">
+        </div>
+
+        <div class="label">
+          <label for="customTim">Select Tip %</label>
+        </div>
+
+        <div class="btnContainer">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn active">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <input type="number" placeholder="custom" id="customTip">
+        </div>
+
+        <div class="label">
+          <label for="people">Number of People</label>
+          <p id="error"></p>
+        </div>
+
+        <div class="peopleWrapper">
+          <input type='number' placeholder='1' id="people">
+          <img src="images/icon-person.svg" alt="person-svg">
+        </div>
+      </div>
+
+      <div class="bottomSection">
+        <div class="amount">
+
+          <div class="desc">
+            <p>Tip Amount <br> <span>/ person</span></p>
+            <div class="tipValue">$5</div>
+          </div>
+
+          <div class="desc">
+            <p>Total <br> <span>/ person</span></p>
+            <div class="tipValue">$200</div>
+          </div>
+        </div>
+
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+  </main>
+
+  
+ <script src="script.js"></script>
+</body>
+</html>
